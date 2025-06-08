@@ -1,45 +1,49 @@
-# 🚢 Titanic Survival Prediction (Flask Web App)
+# 📕 Student Grading System (Tkinter app)
 
-This is a **Machine Learning Web Application** built using **Flask** that predicts whether a passenger would survive the Titanic disaster based on key features. The model is trained using a **Random Forest Classifier** on the Titanic dataset and presented through a simple HTML interface.
-
----
-
-## Objective
-
-To predict the **survival status** of a passenger using the following input features:
-
-- Age  
-- Fare  
-- Passenger Class (Pclass)  
-- Gender (as binary: male = 1, female = 0)  
-- Port of Embarkation (Q, S encoded as binary variables)
+A desktop application using Python Tkinter that enables administrators, teachers, and students to efficiently manage and access academic records and grades.
 
 ---
 
-## Machine Learning Model
-
-- Algorithm: **Random Forest Classifier**
-- File: `titanic_model.pkl` (generated via `pickle`)
-- Preprocessing:
-  - One-hot encoding for `Sex` and `Embarked`
-  - Selected features: `Age`, `Fare`, `Pclass`, `Sex_male`, `Embarked_Q`, `Embarked_S`
-  - NaN values dropped
+##  For Admins:
+- Manage student records (Add / Remove Students)  
+- Manage teacher records (Add / Remove Teachers)  
+- Access detailed student reports (grades, courses)  
+- Search students by ID or name  
+- Secure logout functionality  
 
 ---
 
-## Features
-
-- Clean web UI using HTML/CSS
-- Prediction handled via Flask backend
-- Real-time output: “**Survived**” or “**Did NOT Survive**”
-- Input validation with basic error handling
+## For Teachers:
+- Assign courses to students  
+- Add/update grades for assigned courses  
+- View list of students under their supervision  
+- Secure logout functionality  
 
 ---
 
-## How to Run Locally
+## For Students:
+- View personal grade reports  
+- View enrolled courses  
 
-### Clone the Repository
+---
 
-```bash
-git clone https://github.com/yourusername/titanic-survival-flask.git
-cd titanic-survival-flask
+## General Features:
+- Role-based user authentication (Admin, Teacher, Student)  
+- Intuitive and responsive Tkinter GUI  
+- Data stored and managed via CSV files or Pandas DataFrames  
+- Input validation and error handling  
+
+---
+
+## Project Structure
+
+- `sgs.py`  
+  Core backend logic for managing students, teachers, courses, and grades.
+
+- `sgs_ui.py`  
+  Tkinter-based frontend interfacing with the `sgs` module.
+
+- `data/` *(optional)*  
+  Directory containing CSV files used to store user, grade, and course data.
+
+---
