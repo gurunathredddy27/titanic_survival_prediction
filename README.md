@@ -4,7 +4,7 @@ A desktop application using Python Tkinter that enables administrators, teachers
 
 ---
 
-##  For Admins:
+## 🔐 For Admins:
 - Manage student records (Add / Remove Students)  
 - Manage teacher records (Add / Remove Teachers)  
 - Access detailed student reports (grades, courses)  
@@ -13,7 +13,7 @@ A desktop application using Python Tkinter that enables administrators, teachers
 
 ---
 
-## For Teachers:
+## 👨‍🏫 For Teachers:
 - Assign courses to students  
 - Add/update grades for assigned courses  
 - View list of students under their supervision  
@@ -21,13 +21,13 @@ A desktop application using Python Tkinter that enables administrators, teachers
 
 ---
 
-## For Students:
+## 👨‍🎓 For Students:
 - View personal grade reports  
 - View enrolled courses  
 
 ---
 
-## General Features:
+## ⚙️ General Features:
 - Role-based user authentication (Admin, Teacher, Student)  
 - Intuitive and responsive Tkinter GUI  
 - Data stored and managed via CSV files or Pandas DataFrames  
@@ -35,15 +35,12 @@ A desktop application using Python Tkinter that enables administrators, teachers
 
 ---
 
-## Project Structure
+## 🗂️ Project Structure
 
 - `sgs.py`  
   Core backend logic for managing students, teachers, courses, and grades.
 
 - `sgs_ui.py`  
   Tkinter-based frontend interfacing with the `sgs` module.
-
-- `data/` *(optional)*  
-  Directory containing CSV files used to store user, grade, and course data.
 
 ---
